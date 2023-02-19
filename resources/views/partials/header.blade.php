@@ -1,14 +1,14 @@
 <header>
-        <div class="visa d-flex justify-content-end">
+        <div class="visa d-flex justify-content-end py-2">
             <p>Dc Power Visa<i class="fa-regular fa-registered ps-1"></i></p>
-            <p>Additional Dc Sites<i class="fa-solid fa-sort-down"></i></p>
+            <p class="ms-5">Additional Dc Sites<i class="fa-solid fa-sort-down"></i></p>
     </div>
 
     <section class="d-flex justify-content-between">
         <div>
             <img src="{{Vite::asset('resources/images/dc-logo.png')}}" alt="">
         </div>
-        <div>
+        <div class="marginy">
             <nav class="nav_cont">
                 <ul class="d-flex">
                     @foreach($productsmenu as $menuitem)
@@ -20,7 +20,7 @@
             </nav>
         </div>
 
-        <div class="search">
+        <div class="search marginy">
             <nav class="input-cont">
                 <input type="text" placeholder="Search">
             </nav>
