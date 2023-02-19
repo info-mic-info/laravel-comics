@@ -1,6 +1,6 @@
-<!-- {{-- Pagina 1 e 2 in comune --}} -->
+
 <footer>
-    <!-- {{-- Sezione con i link --}} -->
+
     <div class="cols cont_list">
         <div class="d-flex flex-column">
             <div class="d-flex flex-row">
@@ -17,7 +17,7 @@
                             <li><a href="#">News</a></li>
                         </ul>
                     </div>
-                    <!-- Link footer -->
+        
                     <div class="footer-links">
                         <ul>
                             <li><h4>Shop</h4></li>
@@ -26,7 +26,7 @@
                         </ul>
                     </div>
                 </div>
-                <!-- Link footer -->
+   
                 <div class="footer-links">
                     <ul>
                         <li><h4>DC</h4></li>
@@ -71,14 +71,14 @@
             </div>
         </div>
     </div>
-    {{-- Zona social del footer --}}
-    <div class="social">
+
+    <div class="social d-flex justify-content-between">
         <div class="col-but">
             <button class="footer-button">Sign-up now!</button>
         </div>
-        <div class="icon">
+        <div class="icon d-flex ">
             <h3 class="follow">Follow us</h3>
-            <ul>
+            <ul class="d-flex">
                 @foreach($productsocial as $product)
                     <li>
                         <img src="{{ asset(Vite::asset($product['logo'])) }}" alt="">

@@ -14,5 +14,7 @@
 
     @include('partials.jumbotron')
 
+    @include('partials.footer')
+
 </body>
 </html>
