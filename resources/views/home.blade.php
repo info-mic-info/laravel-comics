@@ -1,26 +1,18 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>DC Comics</title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
-    @vite('resources/js/app.js')
-
-</head>
-
-<body> 
-    @include('partials.header')
-    <div class="container">
-        <h1>Ciao</h1>  
+<!-- {{-- Pagina 1 --}} -->
+@extends('layouts.app')
+@section('content')
+    <!-- {{-- Contenitore e stampa di tutti i fumetti --}} -->
+    <div class="container-fluid bg_gray">
+        <section>
+            <div class="album">
+                @foreach($products as $key => $albumcover)
+                        @include('/partials/detail_card')
+                @endforeach
+            </div>
+            <div class="text-center">
+                <button class="button_load">Load more</button>
+            </div>
+        </section>
     </div>
-    @include('partials.footer')
-</body>
-
-</html>
+        @include('partials.icon-cont')
+    @endsection

@@ -17,9 +17,7 @@
 
 <body> 
 
-       <div class="col-12">
-        {{print_r($products)}}
-       </div>
+      
 
 </body>
 

@@ -14,11 +14,26 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
-});
+    $products = config('comics.fumetti');
+    $productsmenu = config('comics.menu');
+    $productsicon = config('comics.icon');
+    $productsocial = config('comics.social');
 
-Route::get('/prodotti', function () {
-    $products= config('comics.comic_book');
-  
-    return view('prodotti', compact('products'));
-})-> name('products');
+    return view('home', compact('products','productsmenu','productsicon','productsocial'));
+})->name('homepage');
+
+Route::get('/single-card/{id}', function ($id) {
+    $products = config('comics.fumetti');
+    $productsmenu = config('comics.menu');
+    $productsicon = config('comics.icon');
+    $productsocial = config('comics.social');
+    $single= '';
+    foreach($products as $key => $product){
+         
+            if($id == $key){
+                $single = $product;
+            }
+    }
+    
+    return view('single-card', compact('products','productsmenu','productsicon','productsocial','single'));
+})->name('single-card');
