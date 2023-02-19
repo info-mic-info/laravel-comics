@@ -1,1 +1,3 @@
-<h1>HEADER</h1>
+<header>
+    <a href="{{ route('products')}}">Prodotti</a>
+</header> 
