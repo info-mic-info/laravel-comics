@@ -17,8 +17,9 @@
 
 <body> 
 
-        <h1>Prodotti</h1>  
-        <h2>Ciao</h2>
+       <div class="col-12">
+        {{print_r($products)}}
+       </div>
 
 </body>
 

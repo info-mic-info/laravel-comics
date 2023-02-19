@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/prodotti', function () {
-    $products= config('db.comics');
-    dd($products);
+    $products= config('comics.comic_book');
+  
     return view('prodotti', compact('products'));
 })-> name('products');
