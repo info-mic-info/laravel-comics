@@ -1,7 +1,7 @@
 <header>
         <div class="visa d-flex justify-content-end">
             <p>Dc Power Visa<i class="fa-regular fa-registered ps-1"></i></p>
-            <p>Additional Dc Sites</p>
+            <p>Additional Dc Sites<i class="fa-solid fa-sort-down"></i></p>
     </div>
 
     <section class="d-flex justify-content-between">
@@ -19,7 +19,7 @@
                 </ul>
             </nav>
         </div>
-        <!-- {{-- Searchbar --}} -->
+
         <div class="search">
             <nav class="input-cont">
                 <input type="text" placeholder="Search">

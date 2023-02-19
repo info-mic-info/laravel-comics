@@ -9,8 +9,10 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-    {{-- Includo l'header --}}
+
     @include('partials.header')
+
+    @include('partials.jumbotron')
 
 </body>
 </html>
