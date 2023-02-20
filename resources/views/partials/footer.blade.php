@@ -1,7 +1,7 @@
 
 <footer>
 
-    <div class="cols cont_list">
+    <div class="cols cont_list container w-75">
         <div class="d-flex flex-column">
             <div class="d-flex flex-row">
                 <div>
@@ -72,12 +72,13 @@
         </div>
     </div>
 
-    <div class="social d-flex justify-content-between">
+    <div class="bg-dark">
+    <div class="social d-flex justify-content-between container w-75">
         <div class="col-but">
             <button class="footer-button">Sign-up now!</button>
         </div>
         <div class="icon d-flex ">
-            <h3 class="follow">Follow us</h3>
+            <h3 class="follow text-primary">Follow us</h3>
             <ul class="d-flex">
                 @foreach($productsocial as $product)
                     <li>
@@ -86,5 +87,6 @@
                 @endforeach 
             </ul>
         </div>
+    </div>
     </div>
 </footer>

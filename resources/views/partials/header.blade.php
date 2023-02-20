@@ -1,10 +1,12 @@
 <header>
-        <div class="visa d-flex justify-content-end py-2">
+    <div class="bg-primary">
+        <div class="visa d-flex justify-content-end py-2 container w-75">
             <p>Dc Power Visa<i class="fa-regular fa-registered ps-1"></i></p>
             <p class="ms-5">Additional Dc Sites<i class="fa-solid fa-sort-down"></i></p>
     </div>
+    </div>
 
-    <section class="d-flex justify-content-between">
+    <section class="d-flex justify-content-between container w-75">
         <div>
             <img src="{{Vite::asset('resources/images/dc-logo.png')}}" alt="">
         </div>
