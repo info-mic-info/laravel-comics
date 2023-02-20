@@ -1,7 +1,7 @@
 
-<footer>
+<footer class="background-dc">
 
-    <div class="cols cont_list container w-75">
+    <div class="cols cont_list container w-75 py-3">
         <div class="d-flex flex-column">
             <div class="d-flex flex-row">
                 <div>
@@ -73,7 +73,7 @@
     </div>
 
     <div class="bg-dark">
-    <div class="social d-flex justify-content-between container w-75">
+    <div class="social d-flex justify-content-between container w-75 py-3">
         <div class="col-but">
             <button class="footer-button">Sign-up now!</button>
         </div>

@@ -6,15 +6,15 @@
     </div>
     </div>
 
-    <section class="d-flex justify-content-between container w-75">
+    <section class="d-flex justify-content-between container w-75 py-3">
         <div>
             <img src="{{Vite::asset('resources/images/dc-logo.png')}}" alt="">
         </div>
         <div class="marginy">
             <nav class="nav_cont">
-                <ul class="d-flex">
+                <ul class="d-flex justify-content-between ">
                     @foreach($productsmenu as $menuitem)
-                    <li>
+                    <li class="mx-2">
                         <a class="{{Route::currentRouteName() == 'homepage' ? 'active' : ''}}" href="{{$menuitem['url']}}">{{$menuitem['label']}}</a>
                     </li>
                     @endforeach

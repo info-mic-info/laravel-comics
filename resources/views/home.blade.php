@@ -1,8 +1,8 @@
-<!-- {{-- Pagina 1 --}} -->
+
 @extends('layouts.app')
 @section('content')
-    <!-- {{-- Contenitore e stampa di tutti i fumetti --}} -->
-    <div class="bg-secondary">
+
+    <div class="bg-secondary py-3">
         <section class="container w-75">
             <div class="album d-flex flex-wrap ">
                 @foreach($products as $key => $albumcover)
@@ -11,7 +11,7 @@
             </div>
         </section>
             <div class="text-center">
-                <button class="button_load">Load more</button>
+                <button class="button_load my-5">Load more</button>
             </div>
     </div>
         @include('partials.icon-cont')

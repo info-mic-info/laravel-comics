@@ -1,6 +1,6 @@
 
-<div class="footer_cont bg-primary">
-    <ul class="d-flex flex-wrap container w-75">
+<div class="footer_cont bg-primary py-3">
+    <ul class="d-flex justify-content-between container w-75">
         @foreach($productsicon as $product)
             <li>
                 <a href="#">
